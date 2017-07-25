@@ -39,7 +39,7 @@ Here is a simple example
 ```
 ## Authors
 
-* **Kevin Constantine** - *Initial work* - [K-Constantine](https://github.com/K-Constantine)
+* **Kevin Constantine** - *Initial work* - [Monodroid](https://github.com/K-Constantine/Monodroid)
 
 ## License
 
