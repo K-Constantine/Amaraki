@@ -1,6 +1,6 @@
 .PHONY: android
 
-build_ios:
+ios_build:
 	cd bin; bash install.sh -p $(project) -i com.siliconbear.$(project) -n $(project) -f SB -a $(project) -r ios
 
 android:

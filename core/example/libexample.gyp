@@ -5,7 +5,7 @@
             "type": "shared_library",
             "dependencies": [
               "../support-lib/support_lib.gyp:djinni_jni",
-              "../../example/example.gyp:libexample_jni",      
+              "../../test/test.gyp:libtest_jni",      
             ],
             "ldflags": [ "-llog", "-lz", "-Wl,--build-id,--gc-sections,--exclude-libs,ALL" ],
             "sources": [
@@ -24,7 +24,7 @@
             "type": 'static_library',
             "dependencies": [
               "../support-lib/support_lib.gyp:djinni_objc",
-              "../../example/example.gyp:libexample_objc",     
+              "../../test/test.gyp:libtest_objc",     
             ],
             "direct_dependent_settings": {
             },

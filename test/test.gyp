@@ -1,9 +1,10 @@
 {
     "targets": [
         {
-            "target_name": "libexample_jni",
+            "target_name": "libtest_jni",
             "type": "shared_library",
             "dependencies": [
+              "../core/deps/yajl.gyp:yajl",
               "../core/support-lib/support_lib.gyp:djinni_jni",
 	          ],
 	           "sources": [
@@ -19,9 +20,10 @@
             ],
         },
         {
-            "target_name": "libexample_objc",
+            "target_name": "libtest_objc",
             "type": 'static_library',
             "dependencies": [
+              "../core/deps/yajl.gyp:yajl",
               "../core/support-lib/support_lib.gyp:djinni_objc",
             ],
             "direct_dependent_settings": {

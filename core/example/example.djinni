@@ -1,2 +1,2 @@
 
-@import "../../example/example.djinni"
+@import "../../test/test.djinni"

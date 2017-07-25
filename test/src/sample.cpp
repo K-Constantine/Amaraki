@@ -8,7 +8,7 @@ string Sample::getName() {
 	char errbuf[1024];
 	const char * path[] = { "name", (const char *) 0 }; 
 
-	node = yajl_tree_parse("{\"name\": \"Amaraki Example Module :)\"}", errbuf, sizeof(errbuf));
+	node = yajl_tree_parse("{\"name\": \"Amaraki\"}", errbuf, sizeof(errbuf));
 	
 	/* parse error handling */
     if (node == NULL) {
