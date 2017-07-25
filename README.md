@@ -23,9 +23,9 @@ make android project=example
 
 # Generate A Module
 
-How to start coding? It begins with a module which is compiled with the main project.
+How to start coding? It begins with a module which is included in the main project during compilation.
 
-To generate a module, you'd have to run the generate shell script like this;
+To generate a module, you'd have to run the generate.sh script like this;
 
 ```
 ./generate.sh -f {module_name} -p {project_name}
