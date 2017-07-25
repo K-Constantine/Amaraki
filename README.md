@@ -35,7 +35,7 @@ To generate a module, you'd have to run the generate.sh script like this:
 Here is a simple example
 
 ```
-./generate.sh -f example -p example
+./generate.sh -f test -p example
 ```
 ## Authors
 
