@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     
     @IBAction func clearText(_ sender: Any) {
-        myLabel.text = "";
+        myLabel.text = ""; 
     }
     
     @IBAction func clickMeButton(_ sender: Any) {
