@@ -5,7 +5,7 @@
 clean:
 	rm -rf ../GypAndroid.mk
 	rm -rf {PROJECT_NAME}/djinni-output-temp
-	rm -rf {PROJECT_NAME}/generated-src
+	rm -rf generated-src
 	rm -rf {PROJECT_NAME}/lib{PROJECT_NAME}_jni.target.mk
 	@echo "{PROJECT_NAME} cleaned up..."
 

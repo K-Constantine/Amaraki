@@ -3,7 +3,7 @@
 	git clone --depth 1 https://chromium.googlesource.com/external/gyp.git ./deps/gyp
 
 clean:
-	rm -rf example/generated-src
+	rm -rf generated-src
 	@echo "example cleaned up..."
 
 ./build_ios/{PROJECT_MODULE}.xcodeproj: example/libexample.gyp ./support-lib/support_lib.gyp example/example.djinni 

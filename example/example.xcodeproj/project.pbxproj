@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C577DC97DAE95744D16237E2 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D5D8A9089D830DDCFD237E5F /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				CF7CFE686A6F79E0290181B9 /* PBXTargetDependency */,
+				C2B669CF94F5BBD243C9EEEF /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		492B2764CF9787B589ED5233 /* sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C123AEF71506B8779C86C3 /* sample.cpp */; };
+		49AE0CD64B7D01757F47B836 /* SBTest+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC1FD39036AA61028A14D89D /* SBTest+Private.mm */; };
+		4B426FF3B15FBDB09E469CE2 /* NativeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE0ABBC518ED0B65CAE143 /* NativeTest.cpp */; };
+		687680FBB3C82E2EE0921C61 /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B211B11A81D6012CADE17373 /* libdjinni_jni.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00B74D23D3389A8EA366D9FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F03B22B87732B32236C6A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAEFCA9C94BAEF24780AE7D;
+			remoteInfo = libexample_objc;
+		};
+		2A8E85675DFBE92D22C73A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AB00BE44B2E566831B987E /* support_lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 830C2426AC54ADA0794D7413;
+			remoteInfo = djinni_jni_main;
+		};
+		3267A070E725D6235DB7D453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AB00BE44B2E566831B987E /* support_lib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AD97C5F2356EF26110758A40;
+			remoteInfo = djinni_jni;
+		};
+		356F9CDA764188215E454301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AB00BE44B2E566831B987E /* support_lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C99AA4F95316AA552A79C55;
+			remoteInfo = djinni_objc;
+		};
+		B1476D9A25DB29285632A9CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F03B22B87732B32236C6A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B2AF5FFD1D88F00B0532F2D;
+			remoteInfo = libexample_jni;
+		};
+		F9B525F96B263A42B785D68B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AB00BE44B2E566831B987E /* support_lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC658C749F521B13A5BDCBBC;
+			remoteInfo = djinni_jni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25C123AEF71506B8779C86C3 /* sample.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sample.cpp; sourceTree = "<group>"; };
+		3527B96C65BB72919E6EA820 /* libexample_jni.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libexample_jni.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB00BE44B2E566831B987E /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "../build_ios/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8FCE0ABBC518ED0B65CAE143 /* NativeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeTest.cpp; sourceTree = "<group>"; };
+		C4ED4C49933700E01FF825E5 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../core/common.gypi; sourceTree = "<group>"; };
+		E1D5FD6A3EC0BE5639C1CE20 /* libexample_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libexample_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1FD39036AA61028A14D89D /* SBTest+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "SBTest+Private.mm"; sourceTree = "<group>"; };
+		FD07B9145179EDDB40B26291 /* example.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = example.gyp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19EB084C90A37EE244CB9613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687680FBB3C82E2EE0921C61 /* libdjinni_jni.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41757E1057774A4FA8FD361E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4BE01DEE054EBCDC083557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B211B11A81D6012CADE17373 /* libdjinni_jni.a */,
+				4A974796FF449EDDFD4FFF4B /* libdjinni_jni_main.a */,
+				39148FF3E5C7D9143C9CEE8E /* libdjinni_objc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30516F5449B22D1F3B85B3C9 = {
+			isa = PBXGroup;
+			children = (
+				98F90D66C8DA00FAF53EC259 /* Source */,
+				6B56781557B50504BCD82860 /* Projects */,
+				D81AA41C51A0EFC559AF7B71 /* Products */,
+				90E2AE0B7E33B00D061D02E4 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		6B56781557B50504BCD82860 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				81AB00BE44B2E566831B987E /* support_lib.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		6DEAFD0F3F2441B2EDFB2EA7 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				8FCE0ABBC518ED0B65CAE143 /* NativeTest.cpp */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		78C8D23B032A9133EDDB0B56 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				EC1FD39036AA61028A14D89D /* SBTest+Private.mm */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		90E2AE0B7E33B00D061D02E4 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				C4ED4C49933700E01FF825E5 /* common.gypi */,
+				FD07B9145179EDDB40B26291 /* example.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		98F90D66C8DA00FAF53EC259 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BC6D3D6C3BA5042CF54702C7 /* ../core/generated-src */,
+				FBEAD1C9FCEDE7C4A6A07B2C /* src */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		BC6D3D6C3BA5042CF54702C7 /* ../core/generated-src */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAFD0F3F2441B2EDFB2EA7 /* jni */,
+				78C8D23B032A9133EDDB0B56 /* objc */,
+			);
+			path = "../core/generated-src";
+			sourceTree = "<group>";
+		};
+		D81AA41C51A0EFC559AF7B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3527B96C65BB72919E6EA820 /* libexample_jni.dylib */,
+				E1D5FD6A3EC0BE5639C1CE20 /* libexample_objc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBEAD1C9FCEDE7C4A6A07B2C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				25C123AEF71506B8779C86C3 /* sample.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CAEFCA9C94BAEF24780AE7D /* libexample_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51243F5E48AE6FBFA75DD57F /* Build configuration list for PBXNativeTarget "libexample_objc" */;
+			buildPhases = (
+				9E39A23B43DBEBDBB76B84B9 /* Sources */,
+				41757E1057774A4FA8FD361E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libexample_objc;
+			productName = example_objc;
+			productReference = E1D5FD6A3EC0BE5639C1CE20 /* libexample_objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B2AF5FFD1D88F00B0532F2D /* libexample_jni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C9C6D9891E5C3AE3E91245 /* Build configuration list for PBXNativeTarget "libexample_jni" */;
+			buildPhases = (
+				14CB28B04FF288723C5BA472 /* Sources */,
+				19EB084C90A37EE244CB9613 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE1108B3F7D9EA685E776AB /* PBXTargetDependency */,
+			);
+			name = libexample_jni;
+			productName = example_jni;
+			productReference = 3527B96C65BB72919E6EA820 /* libexample_jni.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F03B22B87732B32236C6A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = C4F38EB6E126F598D7CFF95B /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 30516F5449B22D1F3B85B3C9;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2C4BE01DEE054EBCDC083557 /* Products */;
+					ProjectRef = 81AB00BE44B2E566831B987E /* support_lib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C577DC97DAE95744D16237E2 /* All */,
+				9B2AF5FFD1D88F00B0532F2D /* libexample_jni */,
+				4CAEFCA9C94BAEF24780AE7D /* libexample_objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		39148FF3E5C7D9143C9CEE8E /* libdjinni_objc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjinni_objc.a;
+			remoteRef = 356F9CDA764188215E454301 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A974796FF449EDDFD4FFF4B /* libdjinni_jni_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjinni_jni_main.a;
+			remoteRef = 2A8E85675DFBE92D22C73A76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B211B11A81D6012CADE17373 /* libdjinni_jni.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdjinni_jni.a;
+			remoteRef = F9B525F96B263A42B785D68B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14CB28B04FF288723C5BA472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B426FF3B15FBDB09E469CE2 /* NativeTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E39A23B43DBEBDBB76B84B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AE0CD64B7D01757F47B836 /* SBTest+Private.mm in Sources */,
+				492B2764CF9787B589ED5233 /* sample.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B669CF94F5BBD243C9EEEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CAEFCA9C94BAEF24780AE7D /* libexample_objc */;
+			targetProxy = 00B74D23D3389A8EA366D9FD /* PBXContainerItemProxy */;
+		};
+		CF7CFE686A6F79E0290181B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B2AF5FFD1D88F00B0532F2D /* libexample_jni */;
+			targetProxy = B1476D9A25DB29285632A9CF /* PBXContainerItemProxy */;
+		};
+		EBE1108B3F7D9EA685E776AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = djinni_jni;
+			targetProxy = 3267A070E725D6235DB7D453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13A11C913E0A2EDCCB6C0935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					../core/deps/include,
+					"../core/generated-src/jni",
+					"../core/generated-src/cpp",
+					src,
+					"../core/support-lib/jni",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = example_jni;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		26A6E8A2B5F3AF97C763FFD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					../core/deps/include,
+					"../core/generated-src/objc",
+					"../core/generated-src/cpp",
+					src,
+					"../core/support-lib/objc",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = example_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		439DB4496BC25E5DB4F0D46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+		4536F56FFCA6C23891F71435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					../core/deps/include,
+					"../core/generated-src/jni",
+					"../core/generated-src/cpp",
+					src,
+					"../core/support-lib/jni",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = example_jni;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		752CC254BF539E4FE9A413E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					../core/deps/include,
+					"../core/generated-src/objc",
+					"../core/generated-src/cpp",
+					src,
+					"../core/support-lib/objc",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = example_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		E7BDB7C371D756C7A7E93B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		F62562FB6F89AF569258B2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		F846896EF7D14A951A8D04E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51243F5E48AE6FBFA75DD57F /* Build configuration list for PBXNativeTarget "libexample_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752CC254BF539E4FE9A413E4 /* Debug */,
+				26A6E8A2B5F3AF97C763FFD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C4F38EB6E126F598D7CFF95B /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F846896EF7D14A951A8D04E2 /* Debug */,
+				439DB4496BC25E5DB4F0D46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C8C9C6D9891E5C3AE3E91245 /* Build configuration list for PBXNativeTarget "libexample_jni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A11C913E0A2EDCCB6C0935 /* Debug */,
+				4536F56FFCA6C23891F71435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		D5D8A9089D830DDCFD237E5F /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BDB7C371D756C7A7E93B42 /* Debug */,
+				F62562FB6F89AF569258B2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F03B22B87732B32236C6A48 /* Project object */;
+}

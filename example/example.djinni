@@ -1,0 +1,4 @@
+test = interface +c {
+	getName(): string;
+	static create(): test;
+}

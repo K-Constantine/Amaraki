@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "libexample_jni",
+            "target_name": "lib-f_jni",
             "type": "shared_library",
             "dependencies": [
               "../support-lib/support_lib.gyp:djinni_jni",
@@ -20,7 +20,7 @@
             ],
         },
         {
-            "target_name": "libexample_objc",
+            "target_name": "lib-f_objc",
             "type": 'static_library',
             "dependencies": [
               "../support-lib/support_lib.gyp:djinni_objc",
