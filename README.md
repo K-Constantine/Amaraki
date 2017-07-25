@@ -1,6 +1,6 @@
 # Amaraki
 
-Dropbox Djinni wrapper
+A Dropbox Djinni wrapper for simplifying and modularizating your code base. 
 
 ## Build Project
 
@@ -30,7 +30,7 @@ To generate a module, you'd have to run the generate shell script like this;
 ```
 ./generate.sh -f {module_name} -p {project_name}
 ```
-## Example
+### Example
 
 Here is a simple example
 
