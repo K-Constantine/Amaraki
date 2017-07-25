@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.siliconbear.example"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src',
+                            '../../core/generated-src/java',
+            ]
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
+
+task ndkBuild(type: Exec) {
+    Properties properties = new Properties()
+    String MainDirectory = System.getProperty("user.dir") + '/app/'
+
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    String ndkDir = properties.getProperty('ndk.dir', null)
+
+    if (ndkDir == null) {
+        def gradle_project_root = project.rootProject.rootDir
+        throw new GradleException("NDK is not configured. Make sure there is a local.properties " +
+                "file with an ndk.dir entry in the directory ${gradle_project_root}.")
+    }
+    def ndkBuildExecutable = new File(ndkDir, 'ndk-build')
+    if (!ndkBuildExecutable.exists()) {
+        throw new GradleException("Could not find ndk-build. The configured NDK directory " +
+                "${ndkDir} may not be correct.")
+    }
+    environment("NDK_PROJECT_PATH", MainDirectory)
+    environment("GYP_CONFIGURATION", "Release")
+    commandLine ndkBuildExecutable
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn ndkBuild
+}

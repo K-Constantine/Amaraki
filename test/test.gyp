@@ -10,8 +10,9 @@
 	           "sources": [
 			"<!@(python ../core/example/glob.py ../core/generated-src/jni   '*.cpp')",
               "<!@(python ../core/example/glob.py ../core/generated-src/cpp '*.cpp')",
-		            "<!@(python ../core/example/glob.py src/cpp '*.cpp')",
+		            "<!@(python ../core/example/glob.py src '*.cpp')",
             ],
+            'libraries': ['libiconv.a',],
             "include_dirs": [
 	             "../core/deps/include",
               "../core/generated-src/jni",

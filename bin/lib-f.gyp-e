@@ -24,7 +24,7 @@
             "type": 'static_library',
             "dependencies": [
               "../support-lib/support_lib.gyp:djinni_objc",
-              "../../example/example.gyp:libexample_objc",     
+              "../../test/test.gyp:libtest_objc",     
             ],
             "direct_dependent_settings": {
             },

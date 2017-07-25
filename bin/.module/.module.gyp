@@ -9,7 +9,7 @@
 	           "sources": [
 			"<!@(python ../core/{PROJECT_NAME}/glob.py ../core/generated-src/jni   '*.cpp')",
               "<!@(python ../core/{PROJECT_NAME}/glob.py ../core/generated-src/cpp '*.cpp')",
-		            "<!@(python ../core/{PROJECT_NAME}/glob.py src/cpp '*.cpp')",
+		            "<!@(python ../core/{PROJECT_NAME}/glob.py src '*.cpp')",
             ],
             "include_dirs": [
 	             "../core/deps/include",
