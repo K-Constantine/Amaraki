@@ -1,0 +1,2 @@
+# Amaraki
+Dropbox Djinni wrapper
