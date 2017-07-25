@@ -1,0 +1,23 @@
+language: cpp
+
+compiler:
+  - gcc
+  - clang
+
+python: "2.7"
+
+install:
+  - sudo apt-get update >/dev/null
+  - sudo apt-get -q install cmake valgrind
+  - make vendor
+  - sudo pip install -r tests/mocks/requirements.txt --use-mirrors
+
+before_script:
+  - python tests/mocks/rest_webservice.py &
+
+script:
+  - make test
+
+after_success:
+ - valgrind --leak-check=yes ./tests/build/tests
+

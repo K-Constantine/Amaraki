@@ -1,0 +1,30 @@
+Version 0.2.2
+	* Correct bug when receiving broken JSON for a validation error
+
+Version 0.2.1
+	* Support nested validation errors
+
+Version 0.2.0
+	* Added `clone` method
+	* Abstracted `ModelCollection` class used by `HasMany` and `Model`
+	* Added `find` method on collections for searching on primary key
+	* Added `find` and `find_first` methods to search on fields
+	* Switch to official flask-restless repo HEAD for tests
+	* Changed interface function signatures for const-correctness
+	* Merged all JSON code into a single module
+	* Use long long for primary keys
+	* Support `long long` fields
+	* Added `reload_one` and `reload_many` methods to `Model`
+	* Added comparison operators on `Model`
+	* Added `contains` methods on model collection
+	* Limit `Field` template class to support only pre-specified types
+	* Added proper support for copying null values between fields
+	* Added `emplace_clone` method for in-place cloning of models
+	* Added `clone` method for model collections
+	* Added `Foreign` and `BelongsTo` field types
+	* Do not include parents and foreign keys to parents in json ouput
+	  when mapping child objects
+
+Version 0.1.2
+	* First release
+

@@ -1,0 +1,22 @@
+# rule to lazily clone gyp
+./deps/gyp:
+	git clone --depth 1 https://chromium.googlesource.com/external/gyp.git ./deps/gyp
+
+clean:
+	rm -rf {PROJECT_NAME}/generated-src
+	@echo "{PROJECT_NAME} cleaned up..."
+
+./build_ios/{PROJECT_MODULE}.xcodeproj: {PROJECT_NAME}/lib{PROJECT_NAME}.gyp ./support-lib/support_lib.gyp {PROJECT_NAME}/{PROJECT_NAME}.djinni 
+	sh {PROJECT_NAME}/run_djinni.sh 
+	deps/gyp/gyp --depth=. -f xcode -DOS=ios --generator-output ../build_ios -Icommon.gypi ./{PROJECT_NAME}/lib{PROJECT_NAME}.gyp
+
+ios: clean ./build_ios/{PROJECT_MODULE}.xcodeproj
+	xcodebuild -workspace ../ios/{PROJECT_MODULE}/{PROJECT_MODULE}.xcworkspace \
+	-scheme {PROJECT_MODULE} \
+	-configuration 'Debug' \
+	-sdk iphonesimulator 
+
+
+
+
+

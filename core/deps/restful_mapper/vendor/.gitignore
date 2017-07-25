@@ -1,0 +1,7 @@
+*
+!curl
+!gtest
+!iconv
+!yajl
+!.gitignore
+!CMakeLists.txt
