@@ -14,7 +14,7 @@ make {platform} project={project_name}
 For Ios plaform
 
 ```
-make build_ios project=example
+make ios_build project=example
 ```
 For Android platform
 ```
