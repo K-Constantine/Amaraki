@@ -1,6 +1,11 @@
 # Amaraki
+Djinni is a tool for generating cross-language type declarations and interface bindings. It's designed to connect C++ with either Java or Objective-C. Python support is available in an experimental version on the python branch.
 
-A Dropbox Djinni wrapper for simplifying and modularizating your code base. 
+The engineers at Dropbox use Djinni to interface cross-platform C++ library code with platform-specific Java and Objective-C on Android and iOS.
+
+It was announced at CppCon 2014. You can see the [slides](https://bit.ly/djinnitalk) and [video](https://bit.ly/djinnivideo). For more info about Djinni and how others are using it, check this [link](https://github.com/dropbox/djinni).
+
+Amaraki is simply a Djinni wrapper for simplifying and modularizating your code base. It is focused towards modularizing your functionalities and achieving a sustainable code base. It comes prebuilt with [curl](http://curl.haxx.se/libcurl), [restful_mapper](https://github.com/logandk/restful_mapper), [yajl](http://lloyd.github.io/yajl), [curlcpp](https://github.com/JosephP91/curlcpp) and [rapidjson](https://github.com/miloyip/rapidjson).
 
 ## Build Project
 
